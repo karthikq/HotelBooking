@@ -22,6 +22,10 @@ body {
   font-family: sans_med;
   src: url("./fonts/ProductSans-Medium.ttf");
 }
+@font-face {
+  font-family: snas_light;
+  src: url("./fonts/ProductSans-Light.ttf");
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

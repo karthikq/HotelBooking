@@ -1,6 +1,8 @@
 /** @format */
 
 import React from "react";
+import Allrooms from "../components/AllRooms/Allrooms";
+import Facilities from "../components/Facilities/Facilities";
 import "./home.styles.scss";
 
 const Home = () => {
@@ -23,12 +25,15 @@ const Home = () => {
       <div className="search-bar">
         <div className="search-contents">
           <div className="search-item">
+            <i className="gg-calendar-dates"></i>
             <span>Check in</span>
           </div>
           <div className="search-item">
+            <i className="gg-calendar-dates"></i>
             <span>Check out</span>
           </div>
           <div className="search-item">
+            <i className="gg-profile"></i>
             <span>Adults</span>
           </div>
         </div>
@@ -36,6 +41,8 @@ const Home = () => {
           <span>Search</span>
         </div>
       </div>
+      <Allrooms />
+      <Facilities />
     </div>
   );
 };

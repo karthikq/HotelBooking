@@ -1,0 +1,128 @@
+/** @format */
+:root {
+  --swiper-navigation-size: 20px !important;
+}
+@mixin transformColor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 101%;
+  content: "";
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border-radius: 40px;
+  z-index: -5;
+  transform: translateX(100%);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.allrooms-container {
+  width: 100%;
+  height: auto;
+}
+.allrooms-contents {
+  width: 100%;
+  padding: 5% 0 4%;
+}
+.allrooms-header {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  h2 {
+    font-size: 2.85rem;
+  }
+  .allrooms-header-ptag {
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 5;
+    cursor: pointer;
+
+    &::before {
+      @include transformColor();
+    }
+    &:hover {
+      color: white;
+      border: 2px solid transparent;
+    }
+    &:active {
+      transform: scale(0.85);
+    }
+    &:hover::before {
+      color: white;
+      transform: translateX(0);
+    }
+  }
+}
+.allrooms-list {
+  width: 75%;
+  margin: 1rem auto 0;
+
+  .allrooms-box {
+    position: relative;
+    top: 1.5rem;
+    width: 320px;
+    height: 350px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.075) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.041) 0px 30px 60px -30px;
+
+    padding-bottom: 1.35rem;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: pointer;
+    &:hover {
+      transform: translateY(-15px);
+    }
+    img {
+      border-radius: 25px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      width: 100%;
+      height: 80%;
+
+      object-fit: cover;
+    }
+    .allrooms-item-text {
+      width: 100%;
+      padding-left: 1.2rem;
+      p {
+        font-size: 1.2rem;
+        margin: 0.7rem 0 0.4rem;
+        font-family: sans_reg;
+      }
+      span {
+        font-family: snas_light;
+      }
+    }
+  }
+}
+.mySwiper {
+  width: 100% !important ;
+  height: 100% !important;
+  padding: 2rem !important;
+  padding-bottom: 4rem !important;
+}
+.swiper-button-next {
+  right: 25px !important;
+}
+.swiper-button-prev {
+  left: 25px !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-weight: 600;
+  background-color: rgba(48, 47, 47, 0.575);
+  padding: 0.4rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.116);
+  color: rgb(243, 243, 243);
+}
