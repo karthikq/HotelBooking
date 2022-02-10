@@ -1,13 +1,28 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "PT Sans", sans-serif;
 }
-
+@font-face {
+  font-family: sans;
+  src: url("./fonts/ProductSans-Black.ttf");
+}
+@font-face {
+  font-family: sans_reg;
+  src: url("./fonts/ProductSans-Regular.ttf");
+}
+@font-face {
+  font-family: sans_med;
+  src: url("./fonts/ProductSans-Medium.ttf");
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
