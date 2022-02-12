@@ -17,8 +17,7 @@
   width: 350px;
   height: 340px;
   overflow: hidden;
-  box-shadow: rgba(50, 50, 93, 0.185) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.26) 0px 30px 60px -30px;
+
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   &:hover {
     box-shadow: rgba(50, 50, 93, 0.288) 0px 50px 100px -20px,
@@ -65,7 +64,7 @@
   }
   span {
     line-height: 1.5;
-    margin-top: 1.2rem;
+    margin-top: 0.9rem;
     padding-right: 1.7rem;
     font-size: 1.2rem;
     display: block;
@@ -75,6 +74,6 @@
   .features-carousel-btns {
     width: 6rem;
 
-    margin-top: 1.5rem;
+    margin-top: 1.8rem;
   }
 }

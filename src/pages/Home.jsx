@@ -5,6 +5,7 @@ import Allrooms from "../components/AllRooms/Allrooms";
 import Facilities from "../components/Facilities/Facilities";
 import Featureslist from "../components/Features/Featureslist";
 import Reviews from "../components/Reviews/Reviews";
+import UserEvent from "../components/UserEvent/UserEvent";
 import "./home.styles.scss";
 
 const Home = () => {
@@ -47,6 +48,7 @@ const Home = () => {
       <Facilities />
       <Featureslist />
       <Reviews />
+      <UserEvent />
     </div>
   );
 };

@@ -12,7 +12,7 @@ const ReviewItem = ({ details }) => {
           rating={details.rating}
           starDimension="18px"
           starSpacing="5px"
-          starRatedColor="yellow"
+          starRatedColor="#FFCE31"
           numberOfStars={5}
           name="rating"
         />
