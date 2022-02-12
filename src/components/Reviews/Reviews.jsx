@@ -7,13 +7,10 @@ import ReviewItem from "./ReviewItem";
 
 const Reviews = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [userImg, setUserImg] = useState(
-    "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-  );
 
   const slideLeft = () => {
     setActiveIndex(activeIndex - 1);
-    updateImage();
+
     if (activeIndex <= 0) {
       setActiveIndex(3);
     }
@@ -22,38 +19,35 @@ const Reviews = () => {
   const slideRight = () => {
     setActiveIndex(activeIndex + 1);
 
-    updateImage();
     if (activeIndex >= 3) {
       setActiveIndex(0);
     }
   };
-  const updateImage = () => {
-    if (activeIndex === 0) {
-      setUserImg(
-        "https://images.pexels.com/photos/343717/pexels-photo-343717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      );
-    } else if (activeIndex === 1) {
-      setUserImg(
-        "https://images.pexels.com/photos/1484794/pexels-photo-1484794.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      );
-    } else if (activeIndex === 2) {
-      setUserImg(
-        "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      );
-    } else if (activeIndex === 3) {
-      setUserImg(
-        "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      );
-    }
-  };
-  useEffect(() => {
-    updateImage();
-  }, []);
+
   return (
     <div className="review-container">
       <div className="review-contents">
-        <div className="review-img">
-          <img src={userImg} alt="user" />
+        <div className="review-img-container">
+          <div
+            className="review-img"
+            style={{ transform: `translateY(${-activeIndex * 101}%)` }}>
+            <img
+              src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="user"
+            />
+            <img
+              src="https://images.pexels.com/photos/1484794/pexels-photo-1484794.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="user"
+            />
+            <img
+              src="https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="user"
+            />
+            <img
+              src="https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="user"
+            />
+          </div>
         </div>
         <div className="review-details">
           <div
@@ -62,34 +56,27 @@ const Reviews = () => {
             <ReviewItem
               details={{
                 name: "Nikola Jelica",
-
                 desp: "",
                 rating: 5,
               }}
             />
             <ReviewItem
-              updateImg={updateImage}
               details={{
                 name: "Gerald Foka",
-
                 desp: "",
                 rating: 4.5,
               }}
             />
             <ReviewItem
-              updateImg={updateImage}
               details={{
-                name: "Benedicte Rajya",
-
+                name: "Nataliya",
                 desp: "",
                 rating: 4,
               }}
             />
             <ReviewItem
-              updateImg={updateImage}
               details={{
                 name: "Tony",
-
                 desp: "",
                 rating: 5,
               }}
