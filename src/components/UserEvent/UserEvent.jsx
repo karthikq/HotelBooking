@@ -14,7 +14,7 @@ const UserEvent = () => {
           discount and monthly newsletter
         </span>
         <div className="input-bar">
-          <input type="text" placeholder="Enter email address" />
+          <input type="email" required placeholder="Enter email address" />
           <div className="submit-text">Submit</div>
         </div>
       </div>
