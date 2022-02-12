@@ -24,7 +24,6 @@ const Allrooms = () => {
         <div className="allrooms-list">
           <Swiper
             slidesPerView={3.2}
-            centeredSlides={true}
             spaceBetween={5}
             navigation={true}
             modules={[Navigation]}

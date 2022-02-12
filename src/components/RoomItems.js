@@ -1,0 +1,316 @@
+/** @format */
+
+export const Roomitems = [
+  {
+    type: "bedroom",
+    id: 1,
+    list: [
+      {
+        id: 1,
+        name: "",
+        img: "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 2,
+        name: "",
+        img: "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 3,
+        name: "",
+        img: "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 4,
+        name: "",
+        img: "https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 5,
+        name: "",
+        img: "https://images.pexels.com/photos/90319/pexels-photo-90319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 6,
+        name: "",
+        img: "https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 7,
+        name: "",
+        img: "https://images.pexels.com/photos/916337/pexels-photo-916337.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        price: "",
+      },
+      {
+        id: 8,
+        name: "",
+        img: "https://images.pexels.com/photos/833045/pexels-photo-833045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+    ],
+  },
+  {
+    type: "mettingroom",
+    id: 2,
+    list: [
+      {
+        id: 1,
+        name: "",
+        img: "https://images.pexels.com/photos/416320/pexels-photo-416320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 2,
+        name: "",
+        img: "https://images.pexels.com/photos/2976970/pexels-photo-2976970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 3,
+        name: "",
+        img: "https://images.pexels.com/photos/260928/pexels-photo-260928.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        price: "",
+      },
+      {
+        id: 4,
+        name: "",
+        img: "https://images.pexels.com/photos/159806/meeting-modern-room-conference-159806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 5,
+        name: "",
+        img: "https://images.pexels.com/photos/159213/hall-congress-architecture-building-159213.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 6,
+        name: "",
+        img: "https://images.pexels.com/photos/3782317/pexels-photo-3782317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 7,
+        name: "",
+        img: "https://images.pexels.com/photos/3747439/pexels-photo-3747439.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 8,
+        name: "",
+        img: "https://images.pexels.com/photos/94825/pexels-photo-94825.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        price: "",
+      },
+    ],
+  },
+  {
+    type: "guestsroom",
+    id: 3,
+    list: [
+      {
+        id: 1,
+        name: "",
+        img: "https://images.pexels.com/photos/7180885/pexels-photo-7180885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 2,
+        name: "",
+        img: "https://images.pexels.com/photos/3285175/pexels-photo-3285175.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        price: "",
+      },
+      {
+        id: 3,
+        name: "",
+        img: "https://images.pexels.com/photos/5764895/pexels-photo-5764895.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 4,
+        name: "",
+        img: "https://images.pexels.com/photos/3754595/pexels-photo-3754595.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 5,
+        name: "",
+        img: "https://images.pexels.com/photos/279805/pexels-photo-279805.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 6,
+        name: "",
+        img: "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 7,
+        name: "",
+        img: "https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        price: "",
+      },
+      {
+        id: 8,
+        name: "",
+        img: "https://images.pexels.com/photos/707581/pexels-photo-707581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+    ],
+  },
+  {
+    type: "workspaces",
+    id: 4,
+    list: [
+      {
+        id: 1,
+        name: "",
+        img: "https://images.pexels.com/photos/260931/pexels-photo-260931.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        price: "",
+      },
+      {
+        id: 2,
+        name: "",
+        img: "https://images.pexels.com/photos/3770093/pexels-photo-3770093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 3,
+        name: "",
+        img: "https://images.pexels.com/photos/5712532/pexels-photo-5712532.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        price: "",
+      },
+      {
+        id: 4,
+        name: "",
+        img: "https://images.pexels.com/photos/6580228/pexels-photo-6580228.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 5,
+        name: "",
+        img: "https://images.pexels.com/photos/244133/pexels-photo-244133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 6,
+        name: "",
+        img: "https://images.pexels.com/photos/3201772/pexels-photo-3201772.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        price: "",
+      },
+    ],
+  },
+  {
+    type: "gymcenter",
+    id: 5,
+    list: [
+      {
+        id: 1,
+        name: "",
+        img: "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 2,
+        name: "",
+        img: "https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 3,
+        name: "",
+        img: "https://images.pexels.com/photos/5942021/pexels-photo-5942021.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 4,
+        name: "",
+        img: "https://images.pexels.com/photos/917653/pexels-photo-917653.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 5,
+        name: "",
+        img: "https://images.pexels.com/photos/3822307/pexels-photo-3822307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 6,
+        name: "",
+        img: "https://images.pexels.com/photos/3822371/pexels-photo-3822371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 7,
+        name: "",
+        img: "https://images.pexels.com/photos/3775595/pexels-photo-3775595.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 8,
+        name: "",
+        img: "https://images.pexels.com/photos/3775589/pexels-photo-3775589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+    ],
+  },
+  {
+    type: "swimmingpool",
+    id: 6,
+    list: [
+      {
+        id: 1,
+        name: "",
+        img: "https://images.pexels.com/photos/1268871/pexels-photo-1268871.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 2,
+        name: "",
+        img: "https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 3,
+        name: "",
+        img: "https://images.pexels.com/photos/5563472/pexels-photo-5563472.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        price: "",
+      },
+      {
+        id: 4,
+        name: "",
+        img: "https://images.pexels.com/photos/3775141/pexels-photo-3775141.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 5,
+        name: "",
+        img: "https://images.pexels.com/photos/3763788/pexels-photo-3763788.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 6,
+        name: "",
+        img: "https://images.pexels.com/photos/261101/pexels-photo-261101.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 7,
+        name: "",
+        img: "https://images.pexels.com/photos/751268/pexels-photo-751268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+      {
+        id: 8,
+        name: "",
+        img: "https://images.pexels.com/photos/4577700/pexels-photo-4577700.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        price: "",
+      },
+    ],
+  },
+];

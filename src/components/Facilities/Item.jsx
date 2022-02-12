@@ -5,7 +5,7 @@ import React from "react";
 export const Item = ({ id, details }) => {
   return (
     <div
-      className={id % 2 === 0 ? "items-list" : "items-list items-list-reverse"}>
+      className={id % 2 === 0 ? "items-list items-list-reverse" : "items-list"}>
       <div className="item-img">
         <img src={details.img} alt="error" />
       </div>

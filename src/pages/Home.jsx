@@ -3,6 +3,8 @@
 import React from "react";
 import Allrooms from "../components/AllRooms/Allrooms";
 import Facilities from "../components/Facilities/Facilities";
+import Featureslist from "../components/Features/Featureslist";
+import Reviews from "../components/Reviews/Reviews";
 import "./home.styles.scss";
 
 const Home = () => {
@@ -43,6 +45,8 @@ const Home = () => {
       </div>
       <Allrooms />
       <Facilities />
+      <Featureslist />
+      <Reviews />
     </div>
   );
 };
