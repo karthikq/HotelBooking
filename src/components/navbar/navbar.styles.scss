@@ -1,0 +1,37 @@
+/** @format */
+
+.navbar-container {
+  width: 100%;
+  height: auto;
+}
+.navbar-contents {
+  width: 100%;
+  padding-top: 0.2rem;
+  min-height: 4rem;
+}
+.navbar-items {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5rem;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    li {
+      font-family: sans_reg;
+      list-style-type: none;
+      padding: 0.7rem;
+      margin: 0 0.5rem;
+      font-size: 1.1rem;
+      transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+      cursor: pointer;
+      &:hover {
+        color: rgb(22, 6, 250);
+      }
+    }
+    li:last-child {
+      font-family: sans_med;
+    }
+  }
+}

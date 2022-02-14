@@ -1,14 +1,20 @@
 /** @format */
 
-import React from "react";
+import React, { useState } from "react";
 import Allrooms from "../components/AllRooms/Allrooms";
 import Facilities from "../components/Facilities/Facilities";
 import Featureslist from "../components/Features/Featureslist";
 import Reviews from "../components/Reviews/Reviews";
 import UserEvent from "../components/UserEvent/UserEvent";
+
+import "react-datepicker/dist/react-datepicker.css";
 import "./home.styles.scss";
 
+import DatePicker from "react-datepicker";
+
 const Home = () => {
+  const [startDate, setStartDate] = useState(new Date());
+
   return (
     <div className="home-container">
       <div className="home-contents">
@@ -29,15 +35,25 @@ const Home = () => {
         <div className="search-contents">
           <div className="search-item">
             <i className="gg-calendar-dates"></i>
-            <span>Check in</span>
+            <DatePicker
+              selected={startDate}
+              onChange={(date) => setStartDate(date)}
+            />
           </div>
           <div className="search-item">
             <i className="gg-calendar-dates"></i>
-            <span>Check out</span>
+            <DatePicker
+              selected={startDate}
+              onChange={(date) => setStartDate(date)}
+            />
           </div>
           <div className="search-item">
             <i className="gg-profile"></i>
-            <span>Adults</span>
+            <select name="" id="">
+              <option value="">2 Adults </option>
+              <option value="">1 Adults </option>
+              <option value="">3 Adults </option>
+            </select>
           </div>
         </div>
         <div className="search-text">
