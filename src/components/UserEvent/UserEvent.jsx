@@ -18,10 +18,7 @@ const UserEvent = () => {
           Don’t wanna miss something? Subscribe right now and get the special
           discount and monthly newsletter
         </span>
-        <form
-          ref={formRef}
-          onSubmit={(e) => e.preventDefault()}
-          className="input-bar">
+        <div className="input-bar">
           <input
             type="email"
             required
@@ -32,7 +29,6 @@ const UserEvent = () => {
           <div
             className="submit-text"
             onClick={() => {
-              formRef.current.submit();
               userEmail ? (
                 <>
                   {toast.success(`Thanks for subscribtion ${userEmail}`)}
@@ -45,7 +41,7 @@ const UserEvent = () => {
             Submit
           </div>
           <Toaster />
-        </form>
+        </div>
         <span className="err">{err ? "*Required" : ""}</span>
       </div>
     </div>
