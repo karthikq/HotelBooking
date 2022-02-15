@@ -50,9 +50,9 @@ const Home = () => {
           <div className="search-item">
             <i className="gg-profile"></i>
             <select name="" id="">
-              <option value="">2 Adults </option>
-              <option value="">1 Adults </option>
-              <option value="">3 Adults </option>
+              <option value="2">2 Adults - 1 Child </option>
+              <option value="1">4 Adults - 2 Child</option>
+              <option value="3">2 Adults - 2 Child</option>
             </select>
           </div>
         </div>

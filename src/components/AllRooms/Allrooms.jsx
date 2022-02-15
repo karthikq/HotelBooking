@@ -1,6 +1,6 @@
 /** @format */
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./allrooms.styles.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
@@ -11,6 +11,25 @@ import "swiper/css/navigation";
 import Room from "./Room";
 
 const Allrooms = () => {
+  const [slides, setSlides] = useState(4);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 1500) {
+        setSlides(3);
+      }
+      if (window.innerWidth < 1100) {
+        setSlides(2);
+      }
+    });
+    if (window.innerWidth < 1500) {
+      setSlides(3);
+    }
+    if (window.innerWidth < 1100) {
+      setSlides(2);
+    }
+  }, []);
+
   return (
     <div className="allrooms-container">
       <div className="allrooms-contents">
@@ -23,8 +42,9 @@ const Allrooms = () => {
         </header>
         <div className="allrooms-list">
           <Swiper
-            slidesPerView={3.2}
-            spaceBetween={5}
+            slidesPerView={slides}
+            centeredSlides={true}
+            spaceBetween={30}
             navigation={true}
             modules={[Navigation]}
             className="mySwiper">
