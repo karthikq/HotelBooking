@@ -17,7 +17,7 @@
   ul {
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 45%;
     padding-left: 0;
     li {
       font-family: sans_reg;
@@ -43,6 +43,14 @@
     }
     li:last-child {
       font-family: sans_med;
+    }
+  }
+}
+@media screen and(max-width:1550px) {
+  .navbar-items {
+    ul {
+      justify-content: space-between;
+      width: 50%;
     }
   }
 }
