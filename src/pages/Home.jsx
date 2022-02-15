@@ -47,7 +47,7 @@ const Home = () => {
               onChange={(date) => setStartDate(date)}
             />
           </div>
-          <div className="search-item">
+          <div className="search-item" id="booking">
             <i className="gg-profile"></i>
             <select name="" id="">
               <option value="2">2 Adults - 1 Child </option>

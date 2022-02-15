@@ -15,23 +15,25 @@ const Allrooms = () => {
 
   useEffect(() => {
     window.addEventListener("resize", () => {
-      if (window.innerWidth < 1500) {
-        setSlides(3);
-      }
-      if (window.innerWidth < 1100) {
-        setSlides(2);
-      }
+      updateValues();
     });
-    if (window.innerWidth < 1500) {
+  }, []);
+  useEffect(() => {
+    window.addEventListener("load", () => {
+      updateValues();
+    });
+  }, []);
+  function updateValues() {
+    if (document.body.clientWidth < 1550) {
       setSlides(3);
     }
-    if (window.innerWidth < 1100) {
+    if (document.body.clientWidth < 1100) {
       setSlides(2);
     }
-  }, []);
+  }
 
   return (
-    <div className="allrooms-container">
+    <div className="allrooms-container" id="rooms">
       <div className="allrooms-contents">
         <header className="allrooms-header">
           <h2>

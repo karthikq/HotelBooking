@@ -12,12 +12,24 @@ const Navbar = () => {
         </div> */}
         <div className="navbar-items">
           <ul>
-            <li>Booking</li>
-            <li>Facilities</li>
-            <li>Support</li>
-            <li>Rooms</li>
-            <li>Reviews</li>
-            <li>Sign in</li>
+            <li>
+              <a href="#booking"> Booking </a>
+            </li>
+            <li>
+              <a href="#rooms"> Rooms </a>
+            </li>
+            <li>
+              <a href="#facilities"> Facilities </a>
+            </li>
+            <li>
+              <a href="#reviews"> Reviews </a>
+            </li>
+            <li>
+              <a href="#support"> Support </a>
+            </li>
+            {/* <li>
+              <a href="/"> Sign in </a>
+            </li> */}
           </ul>
         </div>
       </div>

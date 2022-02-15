@@ -31,7 +31,7 @@ const Featureslist = () => {
   });
 
   return (
-    <div className="features-container">
+    <div className="features-container" id="features">
       <header className="features-header">
         <h5>
           Save an extra 5-10% <br /> on every room booking
@@ -43,32 +43,32 @@ const Featureslist = () => {
         <div className="features-item-list">
           <ul>
             <li
-              className={activeElement.id === 1 && "li-active"}
+              className={activeElement.id === 1 ? "li-active" : null}
               onMouseEnter={() => setActiveelement(Roomitems[0])}>
               Bedroom
             </li>
             <li
-              className={activeElement.id === 2 && "li-active"}
+              className={activeElement.id === 2 ? "li-active" : null}
               onMouseEnter={() => setActiveelement(Roomitems[1])}>
               Metting Room
             </li>
             <li
-              className={activeElement.id === 3 && "li-active"}
+              className={activeElement.id === 3 ? "li-active" : null}
               onMouseEnter={() => setActiveelement(Roomitems[2])}>
               Guests Room
             </li>
             <li
-              className={activeElement.id === 4 && "li-active"}
+              className={activeElement.id === 4 ? "li-active" : null}
               onMouseEnter={() => setActiveelement(Roomitems[3])}>
               Workspaces
             </li>
             <li
-              className={activeElement.id === 5 && "li-active"}
+              className={activeElement.id === 5 ? "li-active" : null}
               onMouseEnter={() => setActiveelement(Roomitems[4])}>
               Gym Center
             </li>
             <li
-              className={activeElement.id === 6 && "li-active"}
+              className={activeElement.id === 6 ? "li-active" : null}
               onMouseEnter={() => setActiveelement(Roomitems[5])}>
               Swimming Pool
             </li>
@@ -76,8 +76,9 @@ const Featureslist = () => {
         </div>
         <div {...handlers} ref={ref} className="features-item-carousel">
           {activeElement.list &&
-            activeElement?.list.map((item) => (
+            activeElement?.list.map((item, index) => (
               <Room
+                key={index}
                 details={{
                   img: item.img,
                   name: item.name,

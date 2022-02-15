@@ -5,7 +5,7 @@ import Items from "./Items";
 
 const Facilities = () => {
   return (
-    <div className="facilities-container">
+    <div className="facilities-container" id="facilities">
       <div className="facilities-contents">
         <h3>
           See the facilities we <br /> provide in real time

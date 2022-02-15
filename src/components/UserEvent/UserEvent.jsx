@@ -4,7 +4,7 @@ import "./userevent.styles.scss";
 
 const UserEvent = () => {
   return (
-    <div className="userevent-container">
+    <div className="userevent-container" id="support">
       <div className="userevent-contents">
         <h6>
           Subscribe & <br /> get special discount
@@ -15,7 +15,9 @@ const UserEvent = () => {
         </span>
         <div className="input-bar">
           <input type="email" required placeholder="Enter email address" />
-          <div className="submit-text">Submit</div>
+          <div className="submit-text">
+            <a href="mailto:karthikjs10@gmail.com">Submit</a>
+          </div>
         </div>
       </div>
     </div>

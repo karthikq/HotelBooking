@@ -8,7 +8,7 @@
 .home-contents {
   width: 85%;
   margin: 0 auto;
-  padding: 7% 0 4%;
+  padding: 4% 0 4%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -81,7 +81,10 @@
         cursor: pointer;
       }
       .gg-profile {
-        padding-right: 1rem;
+        padding-right: 1.2rem;
+      }
+      select {
+        width: 10rem;
       }
       span {
         font-weight: 400;
@@ -132,6 +135,35 @@
       .search-item {
         width: 7rem;
       }
+    }
+  }
+  .search-text {
+    width: 14rem;
+
+    span {
+      font-size: 1.4rem;
+      letter-spacing: 0.7px;
+      transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+}
+@media screen and(max-width:1250px) {
+  .search-bar {
+    .search-contents {
+      padding-left: 3rem;
+      gap: 0 2.8rem;
+      .search-item {
+        width: 7rem;
+      }
+    }
+  }
+  .search-text {
+    width: 11rem;
+
+    span {
+      font-size: 1.4rem;
+      letter-spacing: 0.7px;
+      transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
 }
