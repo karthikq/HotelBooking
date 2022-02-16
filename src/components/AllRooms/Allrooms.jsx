@@ -30,6 +30,9 @@ const Allrooms = () => {
     if (document.body.clientWidth < 1100) {
       setSlides(2);
     }
+    if (document.body.clientWidth < 800) {
+      setSlides(1);
+    }
   }
 
   return (
@@ -47,7 +50,7 @@ const Allrooms = () => {
             slidesPerView={slides}
             centeredSlides={true}
             spaceBetween={30}
-            navigation={true}
+            navigation={!slides === 1}
             modules={[Navigation]}
             className="mySwiper">
             <SwiperSlide>

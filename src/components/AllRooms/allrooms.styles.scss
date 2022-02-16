@@ -159,3 +159,50 @@
     margin: 1rem auto 0;
   }
 }
+@media screen and(max-width:726px) {
+  .allrooms-header {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.8rem;
+      margin-top: 0rem;
+    }
+    .allrooms-header-ptag {
+      margin-top: 0;
+    }
+  }
+  .allrooms-list {
+    position: relative;
+    right: 0rem;
+    width: 100%;
+    margin: 0rem auto 0;
+  }
+
+  .mySwiper {
+    padding-left: 0.5rem !important;
+    padding-top: 0rem !important;
+  }
+}
+@media screen and(max-width:526px) {
+  .allrooms-box {
+    width: 90%;
+  }
+  .allrooms-header {
+    width: 95%;
+
+    h2 {
+      font-size: 2.2rem;
+    }
+    .allrooms-header-ptag {
+      margin-top: 0.55rem;
+      padding: 0.7rem 0.9rem;
+      font-size: 0.9rem;
+    }
+  }
+  .mySwiper {
+    padding-left: 0.2rem !important;
+    padding-top: 0rem !important;
+  }
+}

@@ -69,3 +69,8 @@
   color: red;
   font-family: snas_light;
 }
+@media screen and(max-width:726px) {
+  .input-bar {
+    width: 80%;
+  }
+}

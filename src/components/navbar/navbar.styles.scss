@@ -66,9 +66,10 @@
   .navbar-items {
     padding-right: 0;
     padding-top: 0.2rem;
+    width: 100%;
+    display: none;
     ul {
-      justify-content: center;
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
     }
   }
