@@ -19,9 +19,9 @@ const Home = () => {
     <div className="home-container">
       <div className="home-contents">
         <div className="home-details">
-          <img className="blog-svg" src={svgbg} alt="svg" />
           <h1>
-            Find suitable <br /> room in Hotel, <br /> Just search here
+            <img className="blog-svg" src={svgbg} alt="svg" />
+            Find suitable room in Hotel, Just search here
           </h1>
           <span>
             The right property for you.big range of top-rated properties. Price
