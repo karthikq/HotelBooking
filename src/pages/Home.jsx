@@ -11,7 +11,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import "./home.styles.scss";
 
 import DatePicker from "react-datepicker";
-
+import svgbg from "./blob.svg";
 const Home = () => {
   const [startDate, setStartDate] = useState(new Date());
 
@@ -19,6 +19,7 @@ const Home = () => {
     <div className="home-container">
       <div className="home-contents">
         <div className="home-details">
+          <img className="blog-svg" src={svgbg} alt="svg" />
           <h1>
             Find suitable <br /> room in Hotel, <br /> Just search here
           </h1>

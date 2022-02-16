@@ -62,3 +62,12 @@
     }
   }
 }
+@media screen and(max-width:1100px) {
+  .navbar-items {
+    display: none;
+    ul {
+      justify-content: space-between;
+      width: 70%;
+    }
+  }
+}
