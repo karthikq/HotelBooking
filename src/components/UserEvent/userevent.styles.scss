@@ -72,9 +72,14 @@
 @media screen and(max-width:726px) {
   .input-bar {
     width: 90%;
+    margin-top: 2rem;
+    input {
+      padding: 0.8rem 1rem;
+    }
   }
   .userevent-contents {
-    padding-top: 10%;
+    padding-top: 9%;
+    padding-bottom: 18%;
     h6 {
       width: 95%;
       margin: 0 auto;

@@ -39,10 +39,7 @@ const Allrooms = () => {
     <div className="allrooms-container" id="rooms">
       <div className="allrooms-contents">
         <header className="allrooms-header">
-          <h2>
-            Rooms we recommend <br />
-            for our customers
-          </h2>
+          <h2>Rooms we recommend for our customers</h2>
           <p className="allrooms-header-ptag">View All Rooms</p>
         </header>
         <div className="allrooms-list">
