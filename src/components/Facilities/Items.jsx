@@ -6,9 +6,7 @@ import { Item } from "./Item";
 const Items = () => {
   return (
     <div className="items-container">
-      <h4>
-        We organize the most popular <br /> facilities to our customers
-      </h4>
+      <h4>We organize the most popular facilities to our customers</h4>
       <div className="items-contents">
         <Item
           id={1}

@@ -50,7 +50,7 @@ const Allrooms = () => {
             slidesPerView={slides}
             centeredSlides={true}
             spaceBetween={30}
-            navigation={!slides === 1}
+            navigation={true}
             modules={[Navigation]}
             className="mySwiper">
             <SwiperSlide>
