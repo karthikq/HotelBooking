@@ -11,7 +11,11 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar-container">
-        <div className="navbar-mobile" onClick={() => data(!value)}>
+        <div
+          className={
+            value ? "navbar-mobile navbar-mobile-active" : "navbar-mobile"
+          }
+          onClick={() => data(!value)}>
           <span></span>
           <span></span>
           <span></span>
@@ -20,26 +24,41 @@ const Navbar = () => {
           className={
             value ? "nav-circle nav-circle-active" : "nav-circle"
           }></div>
-        <div className="navbar-contents">
+        <div
+          className={
+            value
+              ? "navbar-contents  navbar-contents-active"
+              : "navbar-contents"
+          }>
           {/* <div className="brand-logo">
           <img src="" alt="" />
         </div> */}
           <div className="navbar-items">
             <ul>
               <li>
-                <a href="#booking"> Booking </a>
+                <a href="#booking" onClick={() => data(false)}>
+                  Booking
+                </a>
               </li>
               <li>
-                <a href="#rooms"> Rooms </a>
+                <a href="#rooms" onClick={() => data(false)}>
+                  Rooms
+                </a>
               </li>
               <li>
-                <a href="#facilities"> Facilities </a>
+                <a href="#facilities" onClick={() => data(false)}>
+                  Facilities
+                </a>
               </li>
               <li>
-                <a href="#reviews"> Reviews </a>
+                <a href="#reviews" onClick={() => data(false)}>
+                  Reviews
+                </a>
               </li>
               <li>
-                <a href="#support"> Support </a>
+                <a href="#support" onClick={() => data(false)}>
+                  Support
+                </a>
               </li>
               {/* <li>
               <a href="/"> Sign in </a>

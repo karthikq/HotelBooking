@@ -66,6 +66,7 @@
 @media screen and(max-width:1100px) {
   .navbar-contents {
     position: fixed;
+    top: -100%;
     height: 100%;
     width: 100%;
     z-index: 45;
@@ -74,6 +75,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.7s ease-in-out;
+    opacity: 0;
+  }
+  .navbar-contents-active {
+    top: 0;
+    opacity: 1;
   }
   .navbar-items {
     padding-right: 0;
@@ -88,7 +95,7 @@
       align-items: center;
       gap: 1.1rem 0;
       li {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         letter-spacing: 0.8px;
       }
     }
@@ -110,6 +117,21 @@
       background-color: rgb(245, 245, 245);
       margin: 0.3rem auto;
       padding: 0.025rem 0;
+      transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+  .navbar-mobile-active {
+    span {
+      transform: rotate(45deg);
+    }
+    span:nth-child(2) {
+      transform: rotate(-45deg);
+      margin: 0;
+      position: relative;
+      bottom: 0.4rem;
+    }
+    span:nth-child(3) {
+      opacity: 0;
     }
   }
   .nav-circle {
