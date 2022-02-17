@@ -33,7 +33,7 @@ const Navbar = () => {
           {/* <div className="brand-logo">
           <img src="" alt="" />
         </div> */}
-          <div className="navbar-items">
+          <div className="navbar-items ">
             <ul>
               <li style={{ animationDelay: "1s" }}>
                 <a href="#booking" onClick={() => data(false)}>
