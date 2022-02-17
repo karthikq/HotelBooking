@@ -50,6 +50,11 @@ const Reviews = () => {
           </div>
         </div>
         <div className="review-details">
+          <CarouselBtn
+            slideLeft={slideLeft}
+            slideRight={slideRight}
+            className="review-btns"
+          />
           <div
             className="review-details-contents"
             style={{ transform: `translateX(${-activeIndex * 100}%)` }}>
@@ -82,7 +87,12 @@ const Reviews = () => {
               }}
             />
           </div>
-          <CarouselBtn slideLeft={slideLeft} slideRight={slideRight} />
+
+          <CarouselBtn
+            slideLeft={slideLeft}
+            slideRight={slideRight}
+            className="review-btns-2"
+          />
         </div>
       </div>
     </div>

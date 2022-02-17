@@ -36,7 +36,11 @@ const Featureslist = () => {
         <h5>
           Save an extra 5-10% <br /> on every room booking
         </h5>
-        <CarouselBtn slideLeft={slideLeft} slideRight={slideRight} />
+        <CarouselBtn
+          slideLeft={slideLeft}
+          slideRight={slideRight}
+          className="features-btn"
+        />
       </header>
 
       <div className="features-contents">

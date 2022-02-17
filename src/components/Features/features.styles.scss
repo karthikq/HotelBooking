@@ -118,16 +118,55 @@
   }
 }
 @media screen and(max-width:726px) {
-  .allrooms-header {
-    width: 90%;
-    flex-direction: column;
+  .features-header {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
     text-align: center;
-    h2 {
-      font-size: 2.5rem;
+    justify-content: center;
+    h5 {
+      font-size: 2.15rem;
+      margin-top: 3%;
+      margin-top: 0.2rem;
+      margin-bottom: 0.5rem;
     }
   }
-  .allrooms-list {
+  .features-contents {
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 0rem;
+  }
+  .features-btn {
+    display: none;
+  }
+  .features-item-list {
     width: 100%;
-    margin: 1rem auto 0;
+    padding-top: 0.5rem;
+    ul {
+      margin-top: 0.5rem;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding-bottom: 2rem;
+      &:hover {
+        transform: translateY(-5px) !important;
+      }
+      li {
+        margin: 0.5rem 0.6rem;
+      }
+      .li-active {
+        transform: translateY(-5px) !important;
+      }
+    }
+  }
+  .features-item-carousel {
+    width: 100%;
+    padding-left: 1rem;
+    .allrooms-box {
+      width: 260px;
+      margin: 1rem;
+      height: 270px;
+    }
   }
 }
