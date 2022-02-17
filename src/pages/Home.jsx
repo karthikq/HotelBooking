@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Allrooms from "../components/AllRooms/Allrooms";
 import Facilities from "../components/Facilities/Facilities";
 import Featureslist from "../components/Features/Featureslist";
@@ -12,7 +12,11 @@ import "./home.styles.scss";
 
 import DatePicker from "react-datepicker";
 import svgbg from "./blob.svg";
+import { NavContext } from "../components/context/Nav";
+
 const Home = () => {
+  const { value, data } = useContext(NavContext);
+
   const [startDate, setStartDate] = useState(new Date());
 
   return (
