@@ -35,27 +35,27 @@ const Navbar = () => {
         </div> */}
           <div className="navbar-items">
             <ul>
-              <li>
+              <li style={{ animationDelay: "1s" }}>
                 <a href="#booking" onClick={() => data(false)}>
                   Booking
                 </a>
               </li>
-              <li>
+              <li style={{ animationDelay: "1.2s" }}>
                 <a href="#rooms" onClick={() => data(false)}>
                   Rooms
                 </a>
               </li>
-              <li>
+              <li style={{ animationDelay: "1.3s" }}>
                 <a href="#facilities" onClick={() => data(false)}>
                   Facilities
                 </a>
               </li>
-              <li>
+              <li style={{ animationDelay: "1.4s" }}>
                 <a href="#reviews" onClick={() => data(false)}>
                   Reviews
                 </a>
               </li>
-              <li>
+              <li style={{ animationDelay: "1.5s" }}>
                 <a href="#support" onClick={() => data(false)}>
                   Support
                 </a>
