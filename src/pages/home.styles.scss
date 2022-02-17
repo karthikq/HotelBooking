@@ -282,4 +282,11 @@
   .search-bar {
     display: none;
   }
+  .home-img {
+    position: relative;
+    top: 1.6rem;
+    z-index: -2;
+    height: 370px;
+    margin-bottom: 1.05rem;
+  }
 }
