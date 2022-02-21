@@ -71,7 +71,6 @@
 }
 @media screen and(max-width:726px) {
   .userevent-container {
-    height: 70vh;
     display: grid;
     place-content: center;
   }
@@ -83,7 +82,7 @@
     }
   }
   .userevent-contents {
-    padding: 0;
+    padding: 15% 0 20%;
     h6 {
       width: 95%;
       margin: 0 auto;

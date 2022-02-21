@@ -40,9 +40,12 @@ const Home = () => {
             guarantee.
           </motion.span>
         </motion.div>
-        <div className="home-img">
+        <motion.div
+          {...pageIn}
+          transition={{ duration: 1.2, delay: 0.5 }}
+          className="home-img">
           <img src="https://i.ibb.co/W53CvrF/Group-9.png" alt="err" />
-        </div>
+        </motion.div>
       </div>
       <div data-aos="fade-up" className="search-bar">
         <div className="search-contents">
