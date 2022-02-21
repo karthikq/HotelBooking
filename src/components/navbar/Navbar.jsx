@@ -2,12 +2,12 @@
 
 import React, { useContext, useState } from "react";
 import "./navbar.styles.scss";
-import { BiMenu } from "react-icons/bi";
+
 import { NavContext } from "../context/Nav";
 
 const Navbar = () => {
   const { value, data } = useContext(NavContext);
-  console.log(value);
+  const [liState, setLiState] = useState(false);
   return (
     <>
       <div className="navbar-container">
@@ -15,7 +15,12 @@ const Navbar = () => {
           className={
             value ? "navbar-mobile navbar-mobile-active" : "navbar-mobile"
           }
-          onClick={() => data(!value)}>
+          onClick={() => {
+            setLiState(!liState);
+            setTimeout(() => {
+              data(!value);
+            }, 500);
+          }}>
           <span></span>
           <span></span>
           <span></span>
@@ -35,27 +40,52 @@ const Navbar = () => {
         </div> */}
           <div className="navbar-items ">
             <ul>
-              <li style={{ animationDelay: "1s" }}>
+              <li
+                style={
+                  liState
+                    ? { animation: "FadeIn 1s ease-In 0.5s" }
+                    : { animation: "FadeOut 1s ease-Out 0.5s" }
+                }>
                 <a href="#booking" onClick={() => data(false)}>
                   Booking
                 </a>
               </li>
-              <li style={{ animationDelay: "1.2s" }}>
+              <li
+                style={
+                  liState
+                    ? { animation: "FadeIn 1s ease-In 0.6s" }
+                    : { animation: "FadeOut 1s ease-Out 0.6s" }
+                }>
                 <a href="#rooms" onClick={() => data(false)}>
                   Rooms
                 </a>
               </li>
-              <li style={{ animationDelay: "1.3s" }}>
+              <li
+                style={
+                  liState
+                    ? { animation: "FadeIn 1s ease-In 0.7s" }
+                    : { animation: "FadeOut 1s ease-Out 0.7s" }
+                }>
                 <a href="#facilities" onClick={() => data(false)}>
                   Facilities
                 </a>
               </li>
-              <li style={{ animationDelay: "1.4s" }}>
+              <li
+                style={
+                  liState
+                    ? { animation: "FadeIn 1s ease-In 0.8s" }
+                    : { animation: "FadeOut 1s ease-Out 0.8s" }
+                }>
                 <a href="#reviews" onClick={() => data(false)}>
                   Reviews
                 </a>
               </li>
-              <li style={{ animationDelay: "1.5s" }}>
+              <li
+                style={
+                  liState
+                    ? { animation: "FadeIn 1s ease-In 0.9s" }
+                    : { animation: "FadeOut 1s ease-Out 0.9s" }
+                }>
                 <a href="#support" onClick={() => data(false)}>
                   Support
                 </a>

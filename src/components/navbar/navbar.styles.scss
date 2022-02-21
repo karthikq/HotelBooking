@@ -99,8 +99,8 @@
       li {
         font-size: 1.32rem;
         letter-spacing: 0.8px;
-        animation: FadeIn 1s ease-in-out;
-        animation-fill-mode: both;
+        // animation: FadeIn 1s ease-in-out;
+        // animation-fill-mode: both;
       }
     }
   }
@@ -110,19 +110,32 @@
       transform: translateX(-50%);
     }
     85% {
-      opacity: 1;
       transform: scale(1.05);
     }
     100% {
+      opacity: 1;
       transform: scale(1) translateX(0);
+    }
+  }
+  @keyframes FadeOut {
+    0% {
+      opacity: 1;
+      transform: scale(1) translateX(0);
+    }
+    85% {
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-50%);
     }
   }
   .navbar-mobile {
     position: fixed;
-    right: 1.55rem;
+    right: 1.7rem;
     top: 1.7rem;
-    width: 28px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
     cursor: pointer;
     z-index: 50;
 
@@ -161,8 +174,8 @@
     background-color: rgba(0, 0, 0, 0.993);
     padding: 0.4rem 0.6rem 0.7rem;
 
-    clip-path: circle(24px at calc(100% - 39px) 41.5px);
-    transition: all 0.7s ease-in-out;
+    clip-path: circle(22px at calc(100% - 39px) 41.5px);
+    transition: all 0.8s ease-in-out;
   }
   .nav-circle-active {
     background-color: black;
