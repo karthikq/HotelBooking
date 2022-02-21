@@ -254,6 +254,7 @@
     padding-top: 0%;
     flex-direction: column-reverse;
     text-align: center;
+    margin-top: 1.8rem;
   }
   .home-details {
     width: 90%;
@@ -282,7 +283,7 @@
 
   .home-img {
     position: relative;
-    top: 1.6rem;
+    top: 1.2rem;
     z-index: -2;
     height: 370px;
     margin-bottom: 1.05rem;
@@ -293,7 +294,7 @@
     height: 100%;
     background: transparent;
     padding-top: 0rem;
-    margin-top: 2.8rem;
+    margin-top: 1.2rem;
     .search-contents {
       width: 90%;
       padding: 0;
