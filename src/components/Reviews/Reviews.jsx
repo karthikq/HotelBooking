@@ -1,6 +1,7 @@
 /** @format */
 
 import React, { useEffect, useState } from "react";
+import { AosInit } from "../AosInit";
 import CarouselBtn from "../Features/CarouselBtn";
 import "./review.styles.scss";
 import ReviewItem from "./ReviewItem";
@@ -23,11 +24,12 @@ const Reviews = () => {
       setActiveIndex(0);
     }
   };
+  AosInit();
 
   return (
     <div className="review-container" id="reviews">
       <div className="review-contents">
-        <div className="review-img-container">
+        <div data-aos="fade-right" className="review-img-container">
           <div
             className="review-img"
             style={{ transform: `translateY(${-activeIndex * 101}%)` }}>
@@ -49,7 +51,7 @@ const Reviews = () => {
             />
           </div>
         </div>
-        <div className="review-details">
+        <div data-aos="fade-left" className="review-details">
           <CarouselBtn
             slideLeft={slideLeft}
             slideRight={slideRight}

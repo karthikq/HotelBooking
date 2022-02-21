@@ -1,15 +1,17 @@
 /** @format */
 
 import React from "react";
+import { AosInit } from "../AosInit";
 
 export const Item = ({ id, details }) => {
+  AosInit();
   return (
     <div
       className={id % 2 === 0 ? "items-list items-list-reverse" : "items-list"}>
-      <div className="item-img">
+      <div data-aos="fade-up-right" className="item-img">
         <img src={details.img} alt="error" />
       </div>
-      <div className="item-details">
+      <div className="item-details" data-aos="fade-left">
         <p>{details.name}</p>
         <span>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. A esse

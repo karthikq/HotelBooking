@@ -1,12 +1,16 @@
 /** @format */
 
 import React from "react";
+import { AosInit } from "../AosInit";
 import { Item } from "./Item";
 
 const Items = () => {
+  AosInit();
   return (
     <div className="items-container">
-      <h4>We organize the most popular facilities to our customers</h4>
+      <h4 data-aos="fade-up">
+        We organize the most popular facilities to our customers
+      </h4>
       <div className="items-contents">
         <Item
           id={1}

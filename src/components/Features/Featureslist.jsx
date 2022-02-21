@@ -12,6 +12,7 @@ import Room from "../AllRooms/Room";
 
 import { Roomitems } from "../RoomItems";
 import CarouselBtn from "./CarouselBtn";
+import { AosInit } from "../AosInit";
 
 const Featureslist = () => {
   const [activeElement, setActiveelement] = useState(Roomitems[0]);
@@ -29,18 +30,21 @@ const Featureslist = () => {
     onSwipedRight: slideRight,
     onSwipedLeft: slideLeft,
   });
+  AosInit();
 
   return (
     <div className="features-container" id="features">
       <header className="features-header">
-        <h5>
+        <h5 data-aos="fade-right">
           Save an extra 5-10% <br /> on every room booking
         </h5>
-        <CarouselBtn
-          slideLeft={slideLeft}
-          slideRight={slideRight}
-          className="features-btn"
-        />
+        <div data-aos="fade-left">
+          <CarouselBtn
+            slideLeft={slideLeft}
+            slideRight={slideRight}
+            className="features-btn"
+          />
+        </div>
       </header>
 
       <div className="features-contents">
@@ -77,7 +81,12 @@ const Featureslist = () => {
               Swimming Pool
             </li>
           </ul>
-        </div>
+        </div>{" "}
+        <CarouselBtn
+          slideLeft={slideLeft}
+          slideRight={slideRight}
+          className="features-btn-2"
+        />
         <div {...handlers} ref={ref} className="features-item-carousel">
           {activeElement.list &&
             activeElement?.list.map((item, index) => (

@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import Room from "./Room";
+import { AosInit } from "../AosInit";
 
 const Allrooms = () => {
   const [slides, setSlides] = useState(4);
@@ -23,6 +24,8 @@ const Allrooms = () => {
       updateValues();
     });
   }, []);
+  AosInit();
+
   function updateValues() {
     if (document.body.clientWidth < 1550) {
       setSlides(3);
@@ -39,10 +42,12 @@ const Allrooms = () => {
     <div className="allrooms-container" id="rooms">
       <div className="allrooms-contents">
         <header className="allrooms-header">
-          <h2>Rooms we recommend for our customers</h2>
-          <p className="allrooms-header-ptag">View All Rooms</p>
+          <h2 data-aos="fade-up-right">Rooms we recommend for our customers</h2>
+          <p data-aos="fade-up-left" className="allrooms-header-ptag">
+            View All Rooms
+          </p>
         </header>
-        <div className="allrooms-list">
+        <div data-aos="fade-up" className="allrooms-list">
           <Swiper
             slidesPerView={slides}
             centeredSlides={true}
