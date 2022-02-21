@@ -4,10 +4,17 @@ import React, { useContext, useState } from "react";
 import "./navbar.styles.scss";
 
 import { NavContext } from "../context/Nav";
+import { AosInit } from "../AosInit";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const { value, data } = useContext(NavContext);
   const [liState, setLiState] = useState(false);
+  AosInit();
+  const pageT = {
+    initial: { opacity: 0 },
+    animate: { opacity: 1 },
+  };
   return (
     <>
       <div className="navbar-container">
@@ -40,7 +47,9 @@ const Navbar = () => {
         </div> */}
           <div className="navbar-items ">
             <ul>
-              <li
+              <motion.li
+                {...pageT}
+                transition={{ duration: 1 }}
                 style={
                   liState
                     ? { animation: "FadeIn 1s ease-In 0.5s" }
@@ -49,8 +58,10 @@ const Navbar = () => {
                 <a href="#booking" onClick={() => data(false)}>
                   Booking
                 </a>
-              </li>
-              <li
+              </motion.li>
+              <motion.li
+                {...pageT}
+                transition={{ duration: 1, delay: 0.5 }}
                 style={
                   liState
                     ? { animation: "FadeIn 1s ease-In 0.6s" }
@@ -59,8 +70,10 @@ const Navbar = () => {
                 <a href="#rooms" onClick={() => data(false)}>
                   Rooms
                 </a>
-              </li>
-              <li
+              </motion.li>
+              <motion.li
+                {...pageT}
+                transition={{ duration: 1, delay: 0.6 }}
                 style={
                   liState
                     ? { animation: "FadeIn 1s ease-In 0.7s" }
@@ -69,8 +82,10 @@ const Navbar = () => {
                 <a href="#facilities" onClick={() => data(false)}>
                   Facilities
                 </a>
-              </li>
-              <li
+              </motion.li>
+              <motion.li
+                {...pageT}
+                transition={{ duration: 1, delay: 0.7 }}
                 style={
                   liState
                     ? { animation: "FadeIn 1s ease-In 0.8s" }
@@ -79,8 +94,10 @@ const Navbar = () => {
                 <a href="#reviews" onClick={() => data(false)}>
                   Reviews
                 </a>
-              </li>
-              <li
+              </motion.li>
+              <motion.li
+                {...pageT}
+                transition={{ duration: 1, delay: 0.8 }}
                 style={
                   liState
                     ? { animation: "FadeIn 1s ease-In 0.9s" }
@@ -89,7 +106,7 @@ const Navbar = () => {
                 <a href="#support" onClick={() => data(false)}>
                   Support
                 </a>
-              </li>
+              </motion.li>
               {/* <li>
               <a href="/"> Sign in </a>
             </li> */}
