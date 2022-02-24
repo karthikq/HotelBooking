@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import "./userevent.styles.scss";
 import toast, { Toaster } from "react-hot-toast";
 import { AosInit } from "../AosInit";
-
+import validator from "validator";
 const UserEvent = () => {
   const [userEmail, setuserEmail] = useState("");
-  const [err, setErr] = useState(false);
+  const [err, setErr] = useState("");
 
   AosInit();
 
@@ -36,19 +36,25 @@ const UserEvent = () => {
             onClick={() => {
               userEmail ? (
                 <>
-                  {toast.success(`Thanks for subscribtion ${userEmail}`)}
-                  {setErr(false)}
+                  {validator.isEmail(userEmail) ? (
+                    <>
+                      {toast.success(`Thanks for subscribtion ${userEmail}`)}
+                      {setErr("")}
+                    </>
+                  ) : (
+                    setErr("Not a valid email")
+                  )}
                 </>
               ) : (
-                setErr(true)
+                setErr("*Required")
               );
             }}>
             Submit
           </div>
-          <Toaster />
         </div>
-        <span className="err">{err ? "*Required" : ""}</span>
-      </div>
+        <span className="err">{err}</span>
+      </div>{" "}
+      <Toaster />
     </div>
   );
 };
